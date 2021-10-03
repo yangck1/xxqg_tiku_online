@@ -88,8 +88,7 @@ def tableCount():
 	cursor.execute(sql)
 	#获取查询结果：
 	values = cursor.fetchall()
-	JsonStr = json.dumps( values, ensure_ascii=False ) 
-	return JsonStr
+	return json.dumps( values, ensure_ascii=False ) 
 
 @route('/insertOrUpdate', method=['POST'])
 def insertOrUpdate():
